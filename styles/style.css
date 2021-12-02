@@ -172,11 +172,11 @@ section.activity-tracker__menu {
   transition: color 250ms;
   cursor: pointer;
 }
-/* 
-.activity-tracker__option:hover, 
-.activity-tracker__option.active {
-    color: white;
-} */
+      /* 
+      .activity-tracker__option:hover, 
+      .activity-tracker__option.active {
+          color: white;
+      } */
 
 .activity-tracker__option:is(:hover, .active) {
   color: white;
@@ -213,7 +213,6 @@ section.activity-tracker__menu {
 .activity-tracker__activity:is(.social) {
   --background: var(--violet-500);
 }
-/* selfcare might be an issue since it has 2 words and we need one! */
 .activity-tracker__activity:is(.self-care) {
   --background: var(--orange-400);
 }
@@ -258,7 +257,6 @@ section.activity-tracker__menu {
     padding: 2.9rem 3rem 3.2rem;
   }
 }
-
 .activity__header,
 .activity__timeframes {
   display: flex;
@@ -281,10 +279,18 @@ section.activity-tracker__menu {
   font-weight: 500;
 }
 
+.activity__options {
+  transition: white 250ms;
+}
+.activity__options:hover > svg path {
+  fill: white;
+}
+
 .activity__current-timeframe {
   font-size: var(--font-size-activity-result);
   font-weight: 300;
   color: white;
+  line-height: 6.6rem;
 }
 
 .activity__previous-timeframe {
@@ -292,12 +298,3 @@ section.activity-tracker__menu {
   font-size: var(--font-size-activity-window);
   color: var(--blue-100);
 }
-
-/* @media screen and (min-width: 500px) {
-}
-@media screen and (min-width: 500px) {
-}
-@media screen and (min-width: 500px) {
-}
-@media screen and (min-width: 500px) {
-} */
