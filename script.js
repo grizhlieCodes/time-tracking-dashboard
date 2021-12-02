@@ -15,6 +15,7 @@ const updateClickedButton = (clickedButton, allButtons) => {
   allButtons.forEach(option => option.classList.remove('active'))
   clickedButton.classList.add('active')
 }
+
 const renderCards = (optionClicked) => {
   const activities = document.querySelectorAll('.activity-tracker__activity')
   activities.forEach(a => a.remove())
